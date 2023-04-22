@@ -30,6 +30,10 @@
         "@/helper": ["./src/helper/*"],
         "@/types": ["./src/types/*"],
         "@/hooks": ["./src/hooks/*"],
+        "@/routes": ["./src/routes/*"],
+        "@/components": ["./src/components/*"],
+        "@/assets": ["./src/assets/*"],
+        "@/layout": ["./src/layout/*"]
       }
     },
     "include": [
@@ -40,6 +44,10 @@
       "src/helper",
       "src/types",
       "src/hooks",
+      "src/routes",
+      "src/components",
+      "src/assets",
+      "src/layout",
       "externals.d.ts",
     ],
     "exclude": [

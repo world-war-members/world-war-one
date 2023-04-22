@@ -21,6 +21,10 @@
           "@/helper": "./src/helper",
           "@/types": "./src/types",
           "@/hooks": "./src/hooks",
+          "@/routes": "./src/routes",
+          "@/components": "./src/components",
+          "@/assets": "./src/assets",
+          "@/layout": "./src/layout"
         }
       }
     ]
