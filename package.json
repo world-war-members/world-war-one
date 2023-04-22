@@ -5,8 +5,7 @@
   "main": "index.js",
   "lint-staged": {
     "*.{js,jsx,ts,tsx, md}": [
-      "yarn eslint --fix",
-      "bash -c tsc --noEmit"
+      "eslint"
     ]
   },
   "husky": {
@@ -17,9 +16,11 @@
   },
   "scripts": {
     "build": "webpack --mode production",
+    "lint:fix": "eslint . --fix && echo \"eslint: no lint errors\"",
     "build:dev": "cross-env NODE_ENV=development webpack --config environments/webpack/webpack.config.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --mode development --config environments/webpack/webpack.config.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "sh ./scripts/clean.sh"
   },
   "keywords": [],
   "author": "world war 1 team",

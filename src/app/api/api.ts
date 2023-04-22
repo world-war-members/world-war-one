@@ -7,5 +7,5 @@ export const apiSlice = createApi({
 		baseUrl: testConfig.apiUrl,
 	}),
 	tagTypes: ["QUESTIONS"],
-	endpoints: (builder) => ({}),
+	endpoints: () => ({}),
 });
