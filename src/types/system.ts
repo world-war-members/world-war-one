@@ -10,3 +10,8 @@ export interface ISystemState {
     language: LanguageTypes;
     direction: DirectionTypes;
 }
+export interface IQuestionCheck 
+{
+    questionType: string;
+    questionNumber: number;
+}
