@@ -23,15 +23,14 @@ const CheckButton: React.FC<ICheckButtonProps> = ({ data }) => {
         style={{
           width: 180,
           height: 60,
-          backgroundColor: "#4a148c",
+          backgroundColor: "#d9363e",
           color: "white",
           fontSize: "20px",
           fontWeight: "bold",
           alignItems: "center",
           justifyContent: "center",
         }}
-        onClick={handleClick}
-      >
+        onClick={handleClick}>
         Başla
       </Button>
     </div>

@@ -28,9 +28,8 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           fontSize: 20,
           fontWeight: "bold",
           width: "100%",
-          textAlign: "center",
-        }}
-      >
+          textAlign: "center"
+        }}>
         Zorluk seviyesini nasıl istersiniz?
       </h2>
       <Radio.Group
@@ -48,22 +47,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  borderColor: "#FFD600",
-                  backgroundColor: "#FFD600",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#fccb00",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  fontSize: 18,
+                  fontSize: 20,
+                  borderWidth: '3px',
+                  color: "white",
+                  backgroundColor: "#fccb00",
                   borderColor: "white",
                 }
           }
-          value="beginner"
-        >
+          value="beginner">
           Beginner
         </Radio.Button>
         <Radio.Button
@@ -72,24 +72,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: "3px",
-                  borderTopWidth: "3px",
-                  borderColor: "#f68c70",
-                  backgroundColor: "#f68c70",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#f5a623",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: "3px",
-                  borderTopWidth: "3px",
                   borderColor: "white",
-                  fontSize: 18,
+                  backgroundColor: "#f5a623",
+                  borderWidth: '3px',
+                  color: "white",
+                  fontSize: 20,
                 }
           }
-          value="intermediate"
-        >
+          value="intermediate">
           Intermediate
         </Radio.Button>
         <Radio.Button
@@ -98,22 +97,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  borderColor: "#f55c7a",
-                  backgroundColor: "#f55c7a",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#db3e00",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  fontSize: 18,
+                  fontSize: 20,
                   borderColor: "white",
+                  backgroundColor: "#db3e00",
+                  color: "white",
+                  borderWidth: '3px',
                 }
           }
-          value="advenced"
-        >
+          value="advenced">
           Advenced
         </Radio.Button>
       </Radio.Group>
@@ -143,22 +143,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  borderColor: "#7BDCB5",
-                  backgroundColor: "#7BDCB5",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#64b5f6",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
+                  fontSize: 20,
+                  borderWidth: '3px',
+                  color: "white",
+                  backgroundColor: "#64b5f6",
                   borderColor: "white",
-                  fontSize: 16,
                 }
           }
-          value="10"
-        >
+          value="10">
           10
         </Radio.Button>
         <Radio.Button
@@ -167,24 +168,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: "3px",
-                  borderTopWidth: "3px",
-                  borderColor: "#8ed1fc",
-                  backgroundColor: "#8ed1fc",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#2196f3",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: "3px",
-                  borderTopWidth: "3px",
                   borderColor: "white",
-                  fontSize: 16,
+                  backgroundColor: "#2196f3",
+                  borderWidth: '3px',
+                  color: "white",
+                  fontSize: 20,
                 }
           }
-          value="15"
-        >
+          value="15">
           15
         </Radio.Button>
         <Radio.Button
@@ -193,22 +193,23 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
-                  borderColor: "#0693e3",
-                  backgroundColor: "#0693e3",
+                  borderColor: "#8eabb9",
+                  backgroundColor: "#1976d2",
+                  borderWidth: '3px',
                   color: "white",
                   fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: "3px",
+                  fontSize: 20,
                   borderColor: "white",
-                  fontSize: 16,
+                  backgroundColor: "#1976d2",
+                  color: "white",
+                  borderWidth: '3px',
                 }
           }
-          value="20"
-        >
+          value="20">
           20
         </Radio.Button>
       </Radio.Group>

@@ -15,7 +15,6 @@ const Home: React.FC = () => {
   return (
     <div
       style={{
-        backgroundColor: "#CAFAC8",
         position: "absolute",
         top: 0,
         bottom: 0,

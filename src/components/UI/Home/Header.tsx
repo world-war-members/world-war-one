@@ -11,27 +11,16 @@ const Header: React.FC = () => {
           flexDirection: "column",
         }}
       >
-        <div
-          style={{
-            width: 300,
-            height: 300,
-            borderWidth: 3,
-            borderColor: "#673ab7",
-            borderStyle: "solid",
-            borderRadius: 150,
-          }}
-        >
-          {" "}
-        </div>
+        <img src="./assets/logo.png" style={{width: '12rem'}} alt="logo"/>
         <h1
           style={{
-            fontWeight: "bold",
-            fontSize: 40,
+            fontSize: 32,
             textAlign: "center",
             fontFamily: "Helvetica",
+            color: 'rgb(53 26 12)'
           }}
         >
-          WORLD WAR ONE
+          Word War One
         </h1>
       </div>
     </>
