@@ -31,7 +31,7 @@ const CheckButton: React.FC<ICheckButtonProps> = ({ data }) => {
           justifyContent: "center",
         }}
         onClick={handleClick}>
-        Başla
+        Başla :
       </Button>
     </div>
   );
