@@ -13,11 +13,20 @@ const Home: React.FC = () => {
     setQuestion(data);
   };
   return (
-    <>
+    <div
+      style={{
+        backgroundColor: "#CAFAC8",
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+      }}
+    >
       <Header />
       <QuestionCheck sendData={sendData} />
       <CheckButton data={question} />
-    </>
+    </div>
   );
 };
 

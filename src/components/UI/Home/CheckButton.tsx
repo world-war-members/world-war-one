@@ -25,7 +25,7 @@ const CheckButton: React.FC<ICheckButtonProps> = ({ data }) => {
           height: 60,
           backgroundColor: "#4a148c",
           color: "white",
-          fontSize: 23,
+          fontSize: "20px",
           fontWeight: "bold",
           alignItems: "center",
           justifyContent: "center",

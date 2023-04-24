@@ -23,6 +23,16 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
   }, [question]);
   return (
     <>
+      <h2
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        Zorluk seviyesini nasıl istersiniz?
+      </h2>
       <Radio.Group
         style={{
           width: "100%",
@@ -38,17 +48,18 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
+                  borderWidth: "3px",
                   borderColor: "#FFD600",
                   backgroundColor: "#FFD600",
                   color: "white",
-                  fontSize: 25,
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
-                  fontSize: 20,
+                  borderWidth: "3px",
+                  fontSize: 18,
+                  borderColor: "white",
                 }
           }
           value="beginner"
@@ -61,19 +72,20 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: 3,
-                  borderTopWidth: 3,
-                  borderColor: "#FF7C00",
-                  backgroundColor: "#FF7C00",
+                  borderBottomWidth: "3px",
+                  borderTopWidth: "3px",
+                  borderColor: "#f68c70",
+                  backgroundColor: "#f68c70",
                   color: "white",
-                  fontSize: 25,
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: 3,
-                  borderTopWidth: 3,
-                  fontSize: 20,
+                  borderBottomWidth: "3px",
+                  borderTopWidth: "3px",
+                  borderColor: "white",
+                  fontSize: 18,
                 }
           }
           value="intermediate"
@@ -86,17 +98,18 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
-                  borderColor: "red",
-                  backgroundColor: "#ff0004",
+                  borderWidth: "3px",
+                  borderColor: "#f55c7a",
+                  backgroundColor: "#f55c7a",
                   color: "white",
-                  fontSize: 25,
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
-                  fontSize: 20,
+                  borderWidth: "3px",
+                  fontSize: 18,
+                  borderColor: "white",
                 }
           }
           value="advenced"
@@ -105,10 +118,18 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
         </Radio.Button>
       </Radio.Group>
       <br />
-      <br />
+      <h2
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        Kaç soru olsun?
+      </h2>
       <Radio.Group
         style={{
-          marginTop: 10,
           width: "100%",
           textAlign: "center",
         }}
@@ -122,15 +143,18 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
+                  borderWidth: "3px",
                   borderColor: "#7BDCB5",
                   backgroundColor: "#7BDCB5",
                   color: "white",
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
+                  borderWidth: "3px",
+                  borderColor: "white",
+                  fontSize: 16,
                 }
           }
           value="10"
@@ -143,17 +167,20 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: 3,
-                  borderTopWidth: 3,
+                  borderBottomWidth: "3px",
+                  borderTopWidth: "3px",
                   borderColor: "#8ed1fc",
                   backgroundColor: "#8ed1fc",
                   color: "white",
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderBottomWidth: 3,
-                  borderTopWidth: 3,
+                  borderBottomWidth: "3px",
+                  borderTopWidth: "3px",
+                  borderColor: "white",
+                  fontSize: 16,
                 }
           }
           value="15"
@@ -166,15 +193,18 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
               ? {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
+                  borderWidth: "3px",
                   borderColor: "#0693e3",
                   backgroundColor: "#0693e3",
                   color: "white",
+                  fontSize: 20,
                 }
               : {
                   height: 50,
                   width: 200,
-                  borderWidth: 3,
+                  borderWidth: "3px",
+                  borderColor: "white",
+                  fontSize: 16,
                 }
           }
           value="20"
