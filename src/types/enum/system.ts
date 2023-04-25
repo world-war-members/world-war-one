@@ -17,3 +17,8 @@ export enum SystemKeysEnum {
     LANGUAGE = "language",
     DIRECTION = "direction",
 }
+
+export enum SystemThemeEnum {
+    DARK = "darkAlgorithm",
+    LIGHT = "defaultAlgorithm",
+}

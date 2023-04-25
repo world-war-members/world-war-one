@@ -6,7 +6,10 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./app/store/ConfigStore";
 
-ReactDOM.createRoot(document.getElementById("root")  as HTMLElement).render(
+// style
+import "@/assets/styles/css/wwo.min.css";
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<BrowserRouter>

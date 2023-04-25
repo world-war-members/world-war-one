@@ -1,10 +1,11 @@
-import { LocalStorageKeys, LanguageKeys, LanguageDirection } from "@/types/enum/system";
+import { LocalStorageKeys, LanguageKeys, LanguageDirection, SystemThemeEnum } from "@/types/enum/system";
 import { LocalStorageService } from "./localStorage.helper";
 import { ISystemState, SystemKeys } from "@/types/system";
 
 export const defaultSystemSettings: Required<ISystemState> = {
 	language: LanguageKeys.TURKISH,
 	direction: LanguageDirection.LTR,
+	lightMode: true,
 };
 
 const getLocalSystemConfig = (): ISystemState => {
