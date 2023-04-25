@@ -1,11 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Layout } from "antd";
+import MainHeader from "@/components/Layout/Main/Header";
+import MainContent from "@/components/Layout/Main/Content";
 
-const MainLayout : React.FC = () => {
+const MainLayout: React.FC = () => {
 	return (
-		<div>
-			<Outlet />
-		</div>
+		<Layout style={{ height: "100vh" }}>
+			<MainHeader />
+			<MainContent />
+		</Layout>
 	);
 };
 

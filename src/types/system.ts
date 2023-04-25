@@ -6,7 +6,10 @@ export type DirectionTypes = LanguageDirection.LTR | LanguageDirection.LTR;
 
 export type SystemKeys = SystemKeysEnum.LANGUAGE | SystemKeysEnum.DIRECTION;
 
+export type ThemeType = boolean;
+
 export interface ISystemState {
     language: LanguageTypes;
     direction: DirectionTypes;
+    lightMode: ThemeType;
 }

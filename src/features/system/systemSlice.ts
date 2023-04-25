@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { ISystemState, LanguageTypes, DirectionTypes } from "@/types/system";
+import { ISystemState, LanguageTypes, DirectionTypes, ThemeType } from "@/types/system";
 import { SystemServices } from "@/helper/system.helper";
 
 const initialState: ISystemState = SystemServices.getLocalSystemConfig();
@@ -13,6 +13,9 @@ const systemSlices = createSlice({
 		},
 		setDirection(state, action: PayloadAction<DirectionTypes>) {
 			state.direction = action.payload;
+		},
+		setTheme(state, action: PayloadAction<ThemeType>) {
+			state.lightMode = action.payload;
 		},
 	},
 });
