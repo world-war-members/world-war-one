@@ -11,13 +11,13 @@ const Header: React.FC = () => {
           flexDirection: "column",
         }}
       >
-        <img src="./assets/logo-light.svg" style={{width: '12rem', marginTop: '3rem'}} alt="logo"/>
+        <img src="./assets/logo-dark.svg" style={{width: '12rem', marginTop: '3rem'}} alt="logo"/>
         <h1
           style={{
             fontSize: 32,
             textAlign: "center",
             fontFamily: "Helvetica",
-            color: 'rgb(53 26 12)'
+            color: 'white'
           }}
         >
           Word War One

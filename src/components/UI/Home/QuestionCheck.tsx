@@ -7,8 +7,9 @@ interface IQuestionCheckProps {
   sendData: (data: IQuestionCheck) => void;
 }
 const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
-  const borderColor: string = '#ffffff';
-  const borderColorSelected: string = '#000000';
+  const textColor: string = '#000000';
+  const borderColor: string = '#000000';
+  const borderColorSelected: string = '#ffffff';
   const borderWidth: string = '2px';
   const borderBottomWidth: string = '5px';
   const bgColors: string[] = ['#ffc107', '#ff9800', '#ff5722'];
@@ -58,7 +59,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[0],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -66,7 +67,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[0],
               }
@@ -85,7 +86,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[1],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -93,7 +94,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[1],
               }
@@ -112,7 +113,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[2],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -120,7 +121,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[2],
               }
@@ -160,7 +161,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[0],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -168,7 +169,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[0],
               }
@@ -187,7 +188,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[1],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -195,7 +196,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[1],
               }
@@ -214,7 +215,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 backgroundColor: bgColors[2],
                 borderWidth: borderWidth,
                 borderBottomWidth: borderBottomWidth,
-                color: "white",
+                color: textColor,
                 fontSize: 20,
               }
               : {
@@ -222,7 +223,7 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
                 width: 200,
                 fontSize: 20,
                 borderWidth: borderWidth,
-                color: "white",
+                color: textColor,
                 borderColor: borderColor,
                 backgroundColor: bgColors[2],
               }
