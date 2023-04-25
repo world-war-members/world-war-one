@@ -94,6 +94,16 @@ select:active {
   outline: none !important;
 }
 
+.wwo-layout.ant-layout {
+  height: 100vh;
+}
+.wwo-layout.ant-layout.light-text-color {
+  color: #f5f5f5;
+}
+.wwo-layout.ant-layout.dark-text-color {
+  color: #000000;
+}
+
 .main-header.ant-layout-header.bg-light {
   background-color: #f5f5f5 !important;
 }
