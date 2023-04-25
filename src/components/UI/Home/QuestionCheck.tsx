@@ -7,6 +7,12 @@ interface IQuestionCheckProps {
   sendData: (data: IQuestionCheck) => void;
 }
 const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
+  const borderColor: string = '#ffffff';
+  const borderColorSelected: string = '#000000';
+  const borderWidth: string = '2px';
+  const borderBottomWidth: string = '5px';
+  const bgColors: string[] = ['#ffc107', '#ff9800', '#ff5722'];
+
   const [question, setQuestion] = useState<IQuestionCheck>({
     questionType: "beginner",
     questionNumber: 10,
@@ -45,22 +51,25 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           style={
             question.questionType === "beginner"
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[0],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  fontSize: 20,
-                  borderWidth: '3px',
-                  color: "white",
-                  backgroundColor: "#000000"
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[0],
+              }
           }
           value="beginner">
           Beginner
@@ -69,22 +78,25 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           style={
             question.questionType === "intermediate"
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[1],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[1],
+              }
           }
           value="intermediate">
           Intermediate
@@ -93,22 +105,25 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           style={
             question.questionType === "advenced"
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[2],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  fontSize: 20,
-                  backgroundColor: "#000000",
-                  color: "white",
-                  borderWidth: '3px',
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[2],
+              }
           }
           value="advenced">
           Advenced
@@ -134,26 +149,29 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
         value={question.questionNumber}
         onChange={questionNumberCheck}
       >
-        <Radio.Button
+       <Radio.Button
           style={
             question.questionNumber === 10
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[0],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  fontSize: 20,
-                  borderWidth: '3px',
-                  color: "white",
-                  backgroundColor: "#000000"
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[0],
+              }
           }
           value="10">
           10
@@ -162,22 +180,25 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           style={
             question.questionNumber === 15
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[1],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[1],
+              }
           }
           value="15">
           15
@@ -186,22 +207,25 @@ const QuestionCheck: React.FC<IQuestionCheckProps> = ({ sendData }) => {
           style={
             question.questionNumber === 20
               ? {
-                  height: 50,
-                  width: 200,
-                  borderColor: "#a60b18",
-                  backgroundColor: "#000000",
-                  borderWidth: '3px',
-                  color: "white",
-                  fontSize: 20,
-                }
+                height: 50,
+                width: 200,
+                borderColor: borderColor,
+                borderBottomColor: borderColorSelected,
+                backgroundColor: bgColors[2],
+                borderWidth: borderWidth,
+                borderBottomWidth: borderBottomWidth,
+                color: "white",
+                fontSize: 20,
+              }
               : {
-                  height: 50,
-                  width: 200,
-                  fontSize: 20,
-                  backgroundColor: "#000000",
-                  color: "white",
-                  borderWidth: '3px',
-                }
+                height: 50,
+                width: 200,
+                fontSize: 20,
+                borderWidth: borderWidth,
+                color: "white",
+                borderColor: borderColor,
+                backgroundColor: bgColors[2],
+              }
           }
           value="20">
           20
