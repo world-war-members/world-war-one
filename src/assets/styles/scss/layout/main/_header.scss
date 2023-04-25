@@ -1,0 +1,10 @@
+.main-header {
+    &.ant-layout-header {
+        &.bg-light {
+            background-color: $bg-light !important;
+        }
+        &.bg-dark {
+            background-color: $bg-dark !important;
+        }
+    }
+}

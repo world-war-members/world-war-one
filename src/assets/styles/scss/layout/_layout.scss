@@ -1,0 +1,14 @@
+.wwo-layout {
+    &.ant-layout {
+        height: 100vh;
+        &.light-text-color {
+            color: $text-light;
+        }
+        
+        &.dark-text-color {
+            color: $text-dark;
+        }
+    }
+}
+@import "main/header";
+@import "main/content";
