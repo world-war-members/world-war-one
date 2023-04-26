@@ -9,7 +9,7 @@ const HomePageLogo = () => {
 
 	return (
 		<div className="home-logo">
-			<img src={lightMode ? LightLogo : DarkLogo} alt="" style={{objectFit:"cover"}}/>
+			<img src={lightMode ? LightLogo : DarkLogo} alt="site logo"/>
 			<h1>Word War One</h1>
 		</div>
 	);
