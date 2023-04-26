@@ -1,0 +1,38 @@
+@use "sass:map";
+
+.wwo-radio-group {
+    // font-size: 55px;
+    &.ant-radio-group {
+        label {
+            span {
+                font-size: $base-font-size;
+                width: max-content;
+                position: absolute;
+                top: 50%; right: 50%;
+                transform: translate(50%,-50%);
+            }
+        }
+        .ant-radio-button-wrapper {
+            min-width: 150px !important;
+            height: 42px;
+            // @for $i from 1 through 3 {
+            //     &:nth-child(#{$i}) {
+            //       background-color: map.get($radio-group-color, "color" + #{$i})
+            //     }
+            // }
+            
+            
+            &.ant-radio-button-wrapper-checked {
+                // background-color: #01B96B;
+                // &:hover {
+                //     color: unset !important;
+                // }
+            }
+            .ant-radio-button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
