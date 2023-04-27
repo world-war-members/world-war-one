@@ -15,6 +15,7 @@
         .ant-radio-button-wrapper {
             min-width: 150px !important;
             height: 42px;
+
             // @for $i from 1 through 3 {
             //     &:nth-child(#{$i}) {
             //       background-color: map.get($radio-group-color, "color" + #{$i})
@@ -34,5 +35,13 @@
                 justify-content: center;
             }
         }
+    }
+    @media screen and (max-width:map-get($gridBreakpoints, sm)) {
+        &.ant-radio-group {
+            .ant-radio-button-wrapper {
+                min-width: 105px !important;
+                height: 42px;
+            }
+        }  
     }
 }

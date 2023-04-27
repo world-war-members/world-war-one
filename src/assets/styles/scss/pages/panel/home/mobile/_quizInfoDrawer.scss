@@ -1,0 +1,33 @@
+.ant-drawer-mask {
+    backdrop-filter: blur(5px) !important;
+}
+.ant-drawer-content-wrapper {
+    box-shadow: unset !important;
+}
+.wwo-quiz-info-drawer {
+    &.ant-drawer-content {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        .ant-drawer-wrapper-body {
+            .ant-drawer-header {
+                padding: 0 !important;
+                border-bottom: unset;
+                .ant-drawer-header-title {
+                    display: flex;
+                    flex-direction: column !important;
+                    .ant-drawer-close {
+                        margin-inline-end: 0 !important;
+                        font-size: 22px;
+                    }
+                }
+            }
+            .ant-drawer-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+    }
+}
