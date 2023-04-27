@@ -2,7 +2,6 @@ import React from "react";
 import { Radio } from "antd";
 import type { RadioChangeEvent } from "antd";
 import { QuizOptionType } from "@/assets/model/quizLevelModel";
-
 type RadioGroupPropType = {
     options: QuizOptionType[];
     emitterFunction: React.Dispatch<React.SetStateAction<string>>;
