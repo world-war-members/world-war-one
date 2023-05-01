@@ -2,6 +2,14 @@ export type QuizOptionType = {
     label: string,
     value: string,
 }
+export type QuestionType = {
+	word: string;
+	optA: string;
+	optB: string;
+	optC: string;
+	optD: string;
+	optCorrect: string;
+  };
 
 export const quizLevelOptions: QuizOptionType[] = [
 	{ label: "Beginner", value: "Beginner" },
@@ -14,4 +22,22 @@ export const quizQuestionNumberOptions: QuizOptionType[] = [
 	{ label: "15", value: "15" },
 	{ label: "20", value: "20"},
 ];
+export interface QuizModel{
+	level:         string;
+	questionCount: number;
+	duration:      number;
+	questions:     QuestionModel[];
+  }
+  
+  export interface QuestionModel {
+	word:       string;
+	optA:       string;
+	optB:       string;
+	optC:       string;
+	optD:       string;
+	optCorrect: string;
+  }
+
+
+
 

@@ -1,26 +1,25 @@
 import React from "react";
 import { Button } from "antd";
-
+import { useNavigate } from "react-router-dom";
 type StartButtonType = {
-    questionNumber: string;
-    levelInfo: string;
-}
+  questionNumber: string;
+  levelInfo: string;
+  endpoint: string;
+};
 const StartButton = (props: StartButtonType) => {
-	const {questionNumber, levelInfo} = props;
-    
-	const startQuiz = () => {
-		console.log("debug-issue", questionNumber, levelInfo);
-	};
+  const { questionNumber, levelInfo, endpoint } = props;
+  const navigate = useNavigate();
+  const startQuiz = () => {
+    console.log(endpoint);
+    //@ts-ignore
+    navigate("/quiz", { state: { endpoint } });
+  };
 
-	return (
-		<Button 
-			className="start-button"
-			size="large"
-			onClick={startQuiz}
-		>
-            Start
-		</Button>
-	);
+  return (
+    <Button className="start-button" size="large" onClick={startQuiz}>
+      Start
+    </Button>
+  );
 };
 
 export default StartButton;
